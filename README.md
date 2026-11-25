@@ -1,54 +1,62 @@
 
 # Rewind — Official Website
 
-**Your digital past. Always within reach.**
+![Rewind Logo](public/rewind.png)
 
-The official landing page and download website for **Rewind**, a Windows desktop application designed to help users revisit their digital activity, explore previous sessions, and recover important file versions.
+### Your digital past. Always within reach.
 
-This website introduces Rewind, showcases its features, provides a product demo, and offers access to the Windows beta installer.
+The official landing page and download website for Rewind, a Windows desktop application designed to help users revisit their digital activity, recover previous file versions, and stay in control of their digital workflow.
+
+---
 
 ## About Rewind
 
-Rewind helps users keep track of their digital workflow and revisit important moments.
+Rewind aims to make digital history more accessible, organized, and recoverable.
 
-The desktop application is designed to bring activity history, file recovery, checkpoints, and search capabilities together in one place.
+By bringing activity history, smart search, file recovery, and checkpoints together, Rewind helps users rediscover important moments in their digital workflow.
+
+## Dashboard Preview
+
+![Rewind Dashboard](public/dashboard.png)
 
 ## Website Features
 
-- **Responsive Design** — A modern interface optimized for desktop and mobile devices.
-- **Product Overview** — Introduction to Rewind and its capabilities.
-- **Feature Showcase** — Dedicated sections highlighting the application's features.
-- **Dashboard Preview** — A screenshot of the Rewind desktop application.
-- **Product Demo** — An embedded video demonstrating Rewind.
-- **Windows Beta Download** — A download link for the beta installer.
-- **Installation Guide** — Step-by-step instructions for installing the Windows application.
+- Modern dark-themed user interface
+- Responsive desktop and mobile design
+- Rewind product introduction
+- Desktop application dashboard preview
+- Interactive product demo video
+- Windows beta download integration
+- Step-by-step installation guide
+- Direct access to the desktop application repository
 
 ## Rewind Desktop Features
 
-- Activity Timeline
-- Smart Search
-- File Recovery
-- Checkpoints
-- Browser Integration
-- Privacy & Control
+- **Activity Timeline:** Explore digital activity and revisit previous sessions.
+- **Smart Search:** Find previous activities and quickly return to important information.
+- **File Recovery:** Access and recover previous file versions.
+- **Checkpoints:** Keep track of important moments.
+- **Browser Integration:** Connect your browser and explore browsing activity.
+- **Privacy & Control:** Manage recording sessions with start, pause, resume, and end controls.
 
-Some capabilities may still be under development during the beta phase.
+Some features may still be under development during the beta phase.
 
-## Tech Stack
+## Technologies Used
 
-This website is built using:
-
-- React 19
+- React
 - TypeScript
-- Vite 8
+- Vite
 - CSS
 - ESLint
+- Git & GitHub
 
 ## Getting Started
 
 ### Prerequisites
 
-Install Node.js and npm before running the project.
+- Node.js
+- npm
+- Git
 
 ### Installation
 
@@ -81,11 +89,11 @@ Open the local URL displayed in your terminal.
 ## Available Scripts
 
 | Command | Description |
-|---------|-------------|
-| `npm run dev` | Start the development server |
-| `npm run build` | Create a production build |
-| `npm run preview` | Preview the production build |
-| `npm run lint` | Run ESLint |
+| --- | --- |
+| npm run dev | Start the development server |
+| npm run build | Generate a production build |
+| npm run preview | Preview the production build |
+| npm run lint | Check code quality with ESLint |
 
 ## Project Structure
 
@@ -102,53 +110,53 @@ rewind-website/
 │   └── main.tsx
 ├── index.html
 ├── package.json
+├── vite.config.ts
 └── README.md
-```
-
-## Deployment
-
-The website is intended to be deployed using Vercel.
-
-Production build command:
-
-```bash
-npm run build
-```
-
-Output directory:
-
-```text
-dist
 ```
 
 ## Download Rewind
 
-The website provides access to the Rewind Windows beta installer.
+The website provides access to the Windows beta installer.
 
-**Note:** Rewind is currently in beta and the Windows installer is not yet digitally signed. Windows may display a security warning. Users should verify the installer and its source before installation.
+- Platform: Windows Desktop
+- Release: Beta
+- Installer size: Approximately 166 MB
 
-## Related Repository
+### Security Notice
 
-The Rewind desktop application is developed separately.
+Rewind is currently in beta, and the Windows installer is not yet digitally signed.
 
-**Desktop Application:** https://github.com/abdu3061/Rewind
+Google Drive and Windows SmartScreen may display security warnings during the download and installation process.
 
-**Website Repository:** https://github.com/hacerdilarakivrak/rewind-website
+Always verify the installer and trust its source before proceeding with installation.
+
+## Deployment
+
+The website is prepared for deployment on Vercel.
+
+- Framework: Vite
+- Build command: npm run build
+- Output directory: dist
+
+## Related Repositories
+
+- [Rewind Desktop Application](https://github.com/abdu3061/Rewind)
+- [Rewind Website](https://github.com/hacerdilarakivrak/rewind-website)
+
+The website is maintained separately from the main desktop application repository.
 
 ## Project Status
 
-**Website:** Ready for deployment
-
-**Desktop Application:** Windows Beta
+- Website development: Completed
+- Responsive design: Completed
+- Product demo integration: Completed
+- Download integration: Completed
+- Production build: Completed
+- Website deployment: Pending
+- Desktop application: Beta
 
 ---
 
-© 2026 Rewind.
+**Move forward. Look back whenever you need.**
 
-      },
-      // other options...
-    },
-  },
-])
-
-```
+© 2026 Rewind. All rights reserved.
