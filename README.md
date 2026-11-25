@@ -1,71 +1,150 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Rewind — Official Website
 
-Currently, two official plugins are available:
+**Your digital past. Always within reach.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The official landing page and download website for **Rewind**, a Windows desktop application designed to help users revisit their digital activity, explore previous sessions, and recover important file versions.
 
-## React Compiler
+This website introduces Rewind, showcases its features, provides a product demo, and offers access to the Windows beta installer.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## About Rewind
 
-## Expanding the ESLint configuration
+Rewind helps users keep track of their digital workflow and revisit important moments.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The desktop application is designed to bring activity history, file recovery, checkpoints, and search capabilities together in one place.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Website Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- **Responsive Design** — A modern interface optimized for desktop and mobile devices.
+- **Product Overview** — Introduction to Rewind and its capabilities.
+- **Feature Showcase** — Dedicated sections highlighting the application's features.
+- **Dashboard Preview** — A screenshot of the Rewind desktop application.
+- **Product Demo** — An embedded video demonstrating Rewind.
+- **Windows Beta Download** — A download link for the beta installer.
+- **Installation Guide** — Step-by-step instructions for installing the Windows application.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Rewind Desktop Features
 
+- Activity Timeline
+- Smart Search
+- File Recovery
+- Checkpoints
+- Browser Integration
+- Privacy & Control
+
+Some capabilities may still be under development during the beta phase.
+
+## Tech Stack
+
+This website is built using:
+
+- React 19
+- TypeScript
+- Vite 8
+- CSS
+- ESLint
+
+## Getting Started
+
+### Prerequisites
+
+Install Node.js and npm before running the project.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/hacerdilarakivrak/rewind-website.git
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate to the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+cd rewind-website
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+## Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run preview` | Preview the production build |
+| `npm run lint` | Run ESLint |
+
+## Project Structure
+
+```text
+rewind-website/
+├── public/
+│   ├── rewind.png
+│   ├── dashboard.png
+│   └── rewind-demo.mp4
+├── src/
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.tsx
+├── index.html
+├── package.json
+└── README.md
+```
+
+## Deployment
+
+The website is intended to be deployed using Vercel.
+
+Production build command:
+
+```bash
+npm run build
+```
+
+Output directory:
+
+```text
+dist
+```
+
+## Download Rewind
+
+The website provides access to the Rewind Windows beta installer.
+
+**Note:** Rewind is currently in beta and the Windows installer is not yet digitally signed. Windows may display a security warning. Users should verify the installer and its source before installation.
+
+## Related Repository
+
+The Rewind desktop application is developed separately.
+
+**Desktop Application:** https://github.com/abdu3061/Rewind
+
+**Website Repository:** https://github.com/hacerdilarakivrak/rewind-website
+
+## Project Status
+
+**Website:** Ready for deployment
+
+**Desktop Application:** Windows Beta
+
+---
+
+© 2026 Rewind.
+
       },
       // other options...
     },
